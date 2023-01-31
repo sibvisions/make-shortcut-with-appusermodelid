@@ -2,7 +2,6 @@
 using Microsoft.WindowsAPICodePack.Shell.PropertySystem;
 using MS.WindowsAPICodePack.Internal;
 using System;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
@@ -47,9 +46,12 @@ Uses code from https://code.msdn.microsoft.com/windowsdesktop/sending-toast-noti
             // Find the path to the current executable
             IShellLinkW newShortcut = (IShellLinkW)new CShellLink();
 
+            var workDir = Path.GetDirectoryName(exePath);
+
             // Create a shortcut to the exe
             ShellHelpers.ErrorHelper.VerifySucceeded(newShortcut.SetPath(exePath));
             ShellHelpers.ErrorHelper.VerifySucceeded(newShortcut.SetArguments(arguments));
+            ShellHelpers.ErrorHelper.VerifySucceeded(newShortcut.SetWorkingDirectory(workDir));
 
             // Open the shortcut property store, set the AppUserModelId property
             IPropertyStore newShortcutProperties = (IPropertyStore)newShortcut;
