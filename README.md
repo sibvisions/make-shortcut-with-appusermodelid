@@ -20,7 +20,7 @@ on this subject. All rights for the code being used belong to the respective own
 All examples are available in this repository: https://github.com/microsoft/windows-universal-samples/ and the original
 example is available here: https://github.com/microsoft/windows-universal-samples/tree/main/Samples/Notifications
 
-All examples use the MIT licensed.
+All examples use the MIT license.
 
 ## Usage
 
