@@ -13,9 +13,9 @@ A precompiled version of this tool can be found in the "Releases" page.
 
 ## Notice
 
--Most of the code which deals with low-level link creation comes from
+~~Most of the code which deals with low-level link creation comes from
 [an example published by Microsoft](https://code.msdn.microsoft.com/windowsdesktop/sending-toast-notifications-71e230a2/)
-on this subject. All rights for the code being used belong to the respective owners.-
+on this subject. All rights for the code being used belong to the respective owners.~~
 
 All examples are available in this repository: https://github.com/microsoft/windows-universal-samples/ and the original
 example is available here: https://github.com/microsoft/windows-universal-samples/tree/main/Samples/Notifications
