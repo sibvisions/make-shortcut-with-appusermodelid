@@ -22,6 +22,8 @@ example is available here: https://github.com/microsoft/windows-universal-sample
 
 All examples use the MIT license.
 
+Compared to the original repo, we use .NET 7.0.
+
 ## Usage
 
 ```
